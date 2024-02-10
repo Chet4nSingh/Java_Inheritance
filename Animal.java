@@ -3,10 +3,16 @@ package Inheritance;
 public class Animal {
     private String type;
     private String size;
-    private String weight;
+    private int weight;
+
+    public Animal(String type, String size, int weight) {
+        this.type = type;
+        this.size = size;
+        this.weight = weight;
+    }
 
     public String toString() {
-        return "Animal {" + "Type = " + type + "\nSize = " + size + "\nWeight = " + weight + "}";
+        return "Animal {" + "\n\tType = " + type + "\n\tSize = " + size + "\n\tWeight = " + weight + "\n}";
     }
 
     public void move (String speed) {
